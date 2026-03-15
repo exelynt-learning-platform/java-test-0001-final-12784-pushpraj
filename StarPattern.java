@@ -1,12 +1,12 @@
 public class StarPattern {
     public static void main(String[] args) {
-        private final int N = 5;
+        final int SIZE = 5;
 
-        for (int i = 1; i <= 2 * N - 1; i++) {
+        for (int i = 1; i <= 2 * SIZE - 1; i++) {
 
-            int row = i <= N ? i : 2 * N - i;
+            int row = i <= SIZE ? i : 2 * SIZE - i;
 
-            for (int j = row; j < N; j++) {
+            for (int j = row; j < SIZE; j++) {
                 System.out.print(" ");
             }
 
