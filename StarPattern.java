@@ -1,15 +1,24 @@
 public class StarPattern {
     public static void main(String[] args) {
-        int n = 4; // Distance from center to vertex
-        for (int i = -n; i <= n; i++) {
-            for (int j = -n; j <= n; j++) {
-                // The absolute sum defines the diamond boundary
-                if (Math.abs(i) + Math.abs(j) == n) {
-                    System.out.print("*");
-                } else {
+        private final int N = 5;
+
+        for (int i = 1; i <= 2 * N - 1; i++) {
+
+            int row = i <= N ? i : 2 * N - i;
+
+            for (int j = row; j < N; j++) {
+                System.out.print(" ");
+            }
+
+            System.out.print("*");
+
+            if (row > 1) {
+                for (int j = 1; j <= 2 * row - 3; j++) {
                     System.out.print(" ");
                 }
+                System.out.print("*");
             }
+
             System.out.println();
         }
     }
