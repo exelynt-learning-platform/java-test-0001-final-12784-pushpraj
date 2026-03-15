@@ -1,6 +1,6 @@
 public class StarPattern {
     public static void main(String[] args) {
-        final int SIZE = 5;
+        final int SIZE = 5; //Size for pattern creation.
 
         for (int i = 1; i <= 2 * SIZE - 1; i++) {
 
